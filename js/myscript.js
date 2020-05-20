@@ -19,18 +19,19 @@ var priceForKm = (kmLenght * 0.21)
 var discountYouth = ( priceForKm - (priceForKm * 0.2) )
 console.log(discountYouth)
 
-//price discont for senior people
+//price discont 40% for senior people
 var discontSenior = ( priceForKm - (priceForKm * 0.4) )
 console.log(discontSenior)
 
-
 var prezzoBiglietto = priceForKm;
+
+//Calculation based on user's Age
 if (userAge < 18) {
   prezzoBiglietto = discountYouth
 } else if (userAge > 65) {
   prezzoBiglietto = discontSenior
 } else {
-  priceForKm
+  prezzoBiglietto
 }
 
 document.getElementById('prezzo').innerHTML = prezzoBiglietto + '€';
