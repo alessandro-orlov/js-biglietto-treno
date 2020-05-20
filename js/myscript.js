@@ -12,7 +12,22 @@ if (isNaN(kmLenght)) {
 }
 console.log(kmLenght);
 
+// Price based on kmLenght
 var priceForKm = (kmLenght * 0.21)
+
+
+// Price discont 20% for youth
+var discountYouth = ( priceForKm - (priceForKm * 0.2) )
+console.log(discountYouth)
+
+
+//price discont for senior people
+var discontSenior = ( priceForKm - (priceForKm * 0.4) )
+console.log(discontSenior)
+
+// if (userAge < 18) {
+//   priceForKm - (priceForKm * 0.2)
+// }
 
 var prezzoBiglietto = priceForKm;
 
